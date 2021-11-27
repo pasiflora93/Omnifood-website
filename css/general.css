@@ -59,6 +59,9 @@ html {
   /* Percentage of users browser font-size setting */
   font-size: 62.5%;
   overflow-x: hidden;
+
+  /* Does NOT work on Safari */
+  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -109,16 +112,17 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.grid--5-cols {
+/* .grid--5-cols {
   grid-template-columns: repeat(5, 1fr);
-}
+} */
 
 .grid--center-v {
   align-items: center;
 }
 
 .heading-primary,
-.heading-secondary {
+.heading-secondary,
+.heading-tertiary {
   font-weight: 700;
   color: #333;
   letter-spacing: -0.5px;
@@ -182,7 +186,6 @@ body {
 .btn--full:hover,
 .btn--full:active {
   background-color: #cf711f;
-  color: #fff;
 }
 
 .btn--outline:link,
